@@ -14,10 +14,10 @@ import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
 
 export const metadata: Metadata = {
-  title: "Next.js Starter Template for SaaS Startups - Solid SaaS Boilerplate",
+  title: "Devatrix — Building the Future Together with AI Excellence",
 
   // other metadata
-  description: "This is Home for Solid Pro"
+  description: "Devatrix delivers scalable, secure, and intelligent software solutions tailored to meet your evolving needs."
 };
 
 export default function Home() {
