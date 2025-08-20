@@ -61,19 +61,15 @@ const About = () => {
             >
               <span className="font-medium uppercase text-black dark:text-white">
                 <span className="mb-4 mr-4 inline-flex rounded-full bg-meta px-4.5 py-1 text-metatitle uppercase text-white ">
-                  New
-                </span>{" "}
-                SaaS Boilerplate for Next.js
+                  Case Study
+                </span>
+                {/* SaaS Boilerplate for Next.js */}
               </span>
               <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
-                A Complete Solution for
-                <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark">
-                  SaaS Startup
-                </span>
+                Smart Taxi Management Platform for On-Demand Mobility
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                ultricies lacus non fermentum ultrices. Fusce consectetur le.
+                Devatrix didn’t just deliver another ride-hailing app — it reimagined urban mobility for the digital age. Partnering with a fast-growing transport startup, we built a next-gen taxi management solution that blends AI-driven dispatching, real-time tracking, and seamless payment integration. Designed to rival platforms like Easy Taxi, the solution enables operators to manage fleets efficiently, drivers to maximize earnings, and passengers to enjoy safe, reliable, and transparent rides — all from one intelligent ecosystem.
               </p>
 
               <div className="mt-7.5 flex items-center gap-5">
@@ -86,7 +82,7 @@ const About = () => {
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
                     React 18, Next.js 13 and TypeScript
                   </h3>
-                  <p>Ut ultricies lacus non fermentum ultrices.</p>
+                  <p>Responsive, cross-platform user experience.</p>
                 </div>
               </div>
               <div className="mt-7.5 flex items-center gap-5">
@@ -99,7 +95,7 @@ const About = () => {
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
                     Fully Customizable
                   </h3>
-                  <p>consectetur adipiscing elit fermentum ultricies.</p>
+                  <p>Scalable, secure ride-hailing logic.</p>
                 </div>
               </div>
             </motion.div>
