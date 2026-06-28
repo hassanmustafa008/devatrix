@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { fadeInUp } from "@/components/Common/Animations";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -34,17 +35,7 @@ const Signup = () => {
           </div>
 
           <motion.div
-            variants={{
-              hidden: {
-                opacity: 0,
-                y: -20,
-              },
-
-              visible: {
-                opacity: 1,
-                y: 0,
-              },
-            }}
+            variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
             transition={{ duration: 1, delay: 0.1 }}

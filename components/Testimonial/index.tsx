@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { motion } from "framer-motion";
+import { fadeInUp } from "../Common/Animations";
 import SingleTestimonial from "./SingleTestimonial";
 import { testimonialData } from "./testimonialData";
 
@@ -30,17 +31,7 @@ const Testimonial = () => {
         </div>
 
         <motion.div
-          variants={{
-            hidden: {
-              opacity: 0,
-              y: -20,
-            },
-
-            visible: {
-              opacity: 1,
-              y: 0,
-            },
-          }}
+          variants={fadeInUp}
           initial="hidden"
           whileInView="visible"
           transition={{ duration: 1, delay: 0.1 }}

@@ -1,7 +1,8 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import { Brand } from "@/types/brand";
 import { motion } from "framer-motion";
+import { fadeInUp } from "../Common/Animations";
 
 const SingleBrand = ({ brand }: { brand: Brand }) => {
   const { image, href, name, imageLight, id } = brand;
@@ -9,17 +10,7 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
   return (
     <>
       <motion.a
-        variants={{
-          hidden: {
-            opacity: 0,
-            y: -20,
-          },
-
-          visible: {
-            opacity: 1,
-            y: 0,
-          },
-        }}
+        variants={fadeInUp}
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 1, delay: id }}

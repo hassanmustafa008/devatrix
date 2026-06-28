@@ -2,6 +2,7 @@ import React from "react";
 import { Feature } from "@/types/feature";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { fadeInUpSmall } from "../Common/Animations";
 
 const SingleFeature = ({ feature }: { feature: Feature }) => {
   const { icon, title, description } = feature;
@@ -9,17 +10,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
   return (
     <>
       <motion.div
-        variants={{
-          hidden: {
-            opacity: 0,
-            y: -10,
-          },
-
-          visible: {
-            opacity: 1,
-            y: 0,
-          },
-        }}
+        variants={fadeInUpSmall}
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.5 }}

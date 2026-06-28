@@ -5,6 +5,7 @@ import FeaturesTabItem from "./FeaturesTabItem";
 import featuresTabData from "./featuresTabData";
 
 import { motion } from "framer-motion";
+import { fadeInUp } from "../Common/Animations";
 
 const FeaturesTab = () => {
   const [currentTab, setCurrentTab] = useState("tabOne");
@@ -31,17 +32,7 @@ const FeaturesTab = () => {
 
           {/* <!-- Tab Menues Start --> */}
           <motion.div
-            variants={{
-              hidden: {
-                opacity: 0,
-                y: -20,
-              },
-
-              visible: {
-                opacity: 1,
-                y: 0,
-              },
-            }}
+            variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
             transition={{ duration: 0.5, delay: 0.1 }}
@@ -110,17 +101,7 @@ const FeaturesTab = () => {
 
           {/* <!-- Tab Content Start --> */}
           <motion.div
-            variants={{
-              hidden: {
-                opacity: 0,
-                y: -20,
-              },
-
-              visible: {
-                opacity: 1,
-                y: 0,
-              },
-            }}
+            variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
             transition={{ duration: 0.5, delay: 0.5 }}

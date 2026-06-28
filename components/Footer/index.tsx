@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { fadeInUp } from "../Common/Animations";
 import Image from "next/image";
 
 const Footer = () => {
@@ -246,17 +247,7 @@ const Footer = () => {
           {/* <!-- Footer Bottom --> */}
           <div className="flex flex-col flex-wrap items-center justify-center gap-5 border-t border-stroke py-7 dark:border-strokedark lg:flex-row lg:justify-between lg:gap-0">
             <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
+              variants={fadeInUp}
               initial="hidden"
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}
@@ -283,17 +274,7 @@ const Footer = () => {
             </motion.div>
 
             <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
+              variants={fadeInUp}
               initial="hidden"
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}
@@ -306,17 +287,7 @@ const Footer = () => {
             </motion.div>
 
             <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
+              variants={fadeInUp}
               initial="hidden"
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}

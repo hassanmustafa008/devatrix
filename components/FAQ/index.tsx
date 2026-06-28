@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { fadeInLeft, fadeInRight } from "../Common/Animations";
 import Image from "next/image";
 import { useState } from "react";
 import FAQItem from "./FAQItem";
@@ -33,17 +34,7 @@ const FAQ = () => {
           </div>
           <div className="flex flex-wrap gap-8 md:flex-nowrap md:items-center xl:gap-32.5">
             <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  x: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  x: 0,
-                },
-              }}
+              variants={fadeInLeft}
               initial="hidden"
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}
@@ -80,17 +71,7 @@ const FAQ = () => {
             </motion.div>
 
             <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  x: 20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  x: 0,
-                },
-              }}
+              variants={fadeInRight}
               initial="hidden"
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}

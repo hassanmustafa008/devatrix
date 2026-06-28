@@ -24,8 +24,11 @@ const Header = () => {
   };
 
   useEffect(() => {
+    // Check current scroll position on mount (handles refresh while scrolled)
+    handleStickyMenu();
     window.addEventListener("scroll", handleStickyMenu);
-  });
+    return () => window.removeEventListener("scroll", handleStickyMenu);
+  }, []);
 
   return (
     <header

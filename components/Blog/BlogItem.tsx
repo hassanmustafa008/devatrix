@@ -1,6 +1,7 @@
 "use client";
 import { Blog } from "@/types/blog";
 import { motion } from "framer-motion";
+import { fadeInUp } from "../Common/Animations";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,17 +11,7 @@ const BlogItem = ({ blog }: { blog: Blog }) => {
   return (
     <>
       <motion.div
-        variants={{
-          hidden: {
-            opacity: 0,
-            y: -20,
-          },
-
-          visible: {
-            opacity: 1,
-            y: 0,
-          },
-        }}
+        variants={fadeInUp}
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 1, delay: 0.5 }}

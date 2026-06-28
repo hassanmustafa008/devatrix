@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { fadeInLeft, fadeInRight } from "../Common/Animations";
 
 const CTA = () => {
   return (
@@ -11,17 +12,7 @@ const CTA = () => {
         <div className="mx-auto max-w-c-1390 rounded-lg bg-linear-to-t from-[#F8F9FF] to-[#DEE7FF] px-7.5 py-12.5 dark:bg-blacksection dark:bg-linear-to-t dark:from-transparent dark:to-transparent dark:stroke-strokedark md:px-12.5 xl:px-17.5 xl:py-0">
           <div className="flex flex-wrap gap-8 md:flex-nowrap md:items-center md:justify-between md:gap-0">
             <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  x: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  x: 0,
-                },
-              }}
+              variants={fadeInLeft}
               initial="hidden"
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}
@@ -38,17 +29,7 @@ const CTA = () => {
               </p>
             </motion.div>
             <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  x: 20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  x: 0,
-                },
-              }}
+              variants={fadeInRight}
               initial="hidden"
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}

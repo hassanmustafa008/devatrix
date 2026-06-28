@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { fadeInUp } from "../Common/Animations";
 
 const FunFact = () => {
   return (
@@ -67,17 +68,7 @@ const FunFact = () => {
 
           <div className="flex flex-wrap justify-center gap-8 lg:gap-42.5">
             <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
+              variants={fadeInUp}
               initial="hidden"
               whileInView="visible"
               transition={{ duration: 1, delay: 0.5 }}
@@ -90,17 +81,7 @@ const FunFact = () => {
               <p className="text-lg lg:text-para2">World Wide Clients</p>
             </motion.div>
             <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
+              variants={fadeInUp}
               initial="hidden"
               whileInView="visible"
               transition={{ duration: 1, delay: 0.7 }}
@@ -113,17 +94,7 @@ const FunFact = () => {
               <p className="text-lg lg:text-para2">Downloads</p>
             </motion.div>
             <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
+              variants={fadeInUp}
               initial="hidden"
               whileInView="visible"
               transition={{ duration: 1, delay: 0.8 }}
